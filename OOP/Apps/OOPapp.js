@@ -1,13 +1,10 @@
-var app = { 
-	//define employee constructor
-	Employee: function(Name, post) {
-  		this.Name = Name;
-  		this.post = post;
-	},
-	prototype:getsalary = function(){
-		return 500*30;
-	}
+Employee = function(name, post){
+   this.name = name;
+   this.post = post;
 };
-module.exports = app;
+Employee.prototype.getSalary = function(){
+   return 500*28;
+};
 
+module.exports = Employee;
  
